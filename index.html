@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GROCERY-MARKET</title>
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d61594a37e.js" crossorigin="anonymous"></script>
+
+
+
+    <style>
+        .google-font {
+            font-family: "Sora", serif;
+        }
+
+        @keyframes fadeInScale {
+            0% {
+                opacity: 0.5;
+                transform: scale(0.9);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            100% {
+                opacity: 0.5;
+                transform: scale(0.9);
+            }
+        }
+
+        .animate-fadeInScale {
+            animation: fadeInScale 3s ease-in-out infinite;
+        }
+    </style>
+
+
+</head>
+
+<body class="google-font">
+    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
+        <!-- menu for desktop-->
+        <nav class="hidden md:flex  mx-auto max-w-7xl py-6 justify-between items-center ">
+            <div class="w-[120px] hover:scale-105 duration-320">
+                <img src="images/logo-header.png" alt="">
+            </div>
+
+            <ul class="flex gap-8">
+                <li><a class="text-[#111111] hover:text-[#179800] font-[400]" href="#">Products</a></li>
+                <li><a class="text-[#111111] hover:text-[#179800] font-[400]" href="#">Services</a></li>
+                <li><a class="text-[#111111] hover:text-[#179800] font-[400]" href="#">Contact us</a></li>
+            </ul>
+
+            <div class="flex gap-4 items-center">
+                <i class="fa-solid fa-magnifying-glass text-[#111111] hover:text-[#179800] text-xl"></i>
+                <i class="fa-solid fa-cart-shopping text-[#111111] hover:text-[#179800] text-xl"></i>
+                <button
+                    class="border-[#179800] border-[1.5px] py-[5px] px-[25px] rounded-md font-[400] text-[#111111] hover:text-[#179800] hover:bg-white">Login</button>
+                <button
+                    class="border-[#179800] border-[1.5px] py-[5px] px-[25px] rounded-md bg-[#179800] font-[400] hover:bg-white text-white hover:text-[#179800]">Register</button>
+            </div>
+        </nav>
+
+        <!-- menu for mobile -->
+        <nav class="max-w-[94%] mx-auto py-6 flex md:hidden justify-between items-center">
+            <img class="w-[50px]" src="images/logo-mobile.png" alt="">
+            <i class="fa-solid fa-bars text-3xl text-[#179800]"></i>
+        </nav>
+        <hr class="border border-[#179800] md:hidden">
+
+        <!-- banner  part -->
+        <div class="flex flex-col items-center md:w-[70%] mx-auto mt-[70px] gap-[32px]">
+            <h2
+                class="text-center text-4xl md:text-5xl font-[600] text-[#111111] opacity-0 animate-fadeInScale delay-100">
+                Freshness <span class="text-[#179800]">You Can <br> Count </span> On, Prices You'll Love!
+            </h2>
+            <p class="text-center w-[94%] md:w-[50%] mx-auto text-[#414141]">
+                Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you
+                covered every day!
+            </p>
+            <img src="images/hero-vegetables.png" alt="">
+        </div>
+    </header>
+</body>
+
+</html>
